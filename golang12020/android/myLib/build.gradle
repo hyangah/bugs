@@ -1,0 +1,18 @@
+/* Copyright 2015 The Go Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+plugins {
+    id "org.golang.mobile.bind" version "0.2.2"
+}
+
+gobind {
+    pkg = "github.com/hyangah/bugs/golang12020/myLib"
+
+    /* REPLACE THIS with GOPATH where the Go package is; check `go env` */
+    GOPATH = "/Users/hakim/Local/gopaths/ws1"
+
+    /* REPLACE THIS with the absolute path to the go binary */
+    GO = "/Users/hakim/Local/goroots/tip/go/bin/go"
+}
